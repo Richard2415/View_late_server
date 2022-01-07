@@ -8,7 +8,7 @@
     "dev": "nodemon index.js",
     "build:ui": "rm -rf build && cd ../client && rm -rf build && npm run build --prod && cp -r build ../server"
   },
-  "author": "Amandeep S.",
+  "author": "Richard.",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.0.1",
