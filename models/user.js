@@ -21,7 +21,7 @@ const userSchema = new mongoose.Schema({
   },
 });
 
-//userSchema.plugin(uniqueValidator);
+userSchema.plugin(uniqueValidator);
 
 // replaces _id with id, convert id to string from ObjectID and deletes __v
 userSchema.set('toJSON', {

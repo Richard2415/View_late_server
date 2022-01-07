@@ -43,7 +43,7 @@ const entrySchema = new mongoose.Schema(
   }
 );
 
-//entrySchema.plugin(uniqueValidator);
+entrySchema.plugin(uniqueValidator);
 
 // replaces _id with id, convert id to string from ObjectID and deletes __v
 entrySchema.set('toJSON', {
