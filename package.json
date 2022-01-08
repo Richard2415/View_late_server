@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js",
-    "build:ui": "rm -rf build && cd ../client && rm -rf build && npm run build --prod && cp -r build ../server"
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "author": "Richard.",
   "license": "ISC",

@@ -7,6 +7,6 @@ connectToDB();
 
 const server = http.createServer(app);
 
-server.listen(PORT, () => {
+server.listen(PORT || 5000, () => {
   console.log(`Server running on port ${PORT}`);
 });
