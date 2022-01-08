@@ -16,10 +16,5 @@ app.use('/api/entries', entryRoutes);
 app.use(middleware.unknownEndpointHandler);
 app.use(middleware.errorHandler);
 
-app.use(express.static(path.join(__dirname, "/client/build")));
-
-app.get('*', (req, res) => {
-    res.sendFile(path.join(_dirname, '/client/build', 'index.html'));
-});
 
 module.exports = app;
