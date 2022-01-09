@@ -10,7 +10,9 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-app.use('/api', authRoutes);
+app.use('/api', (req, res) => {
+    res.json("server started")
+});
 app.use('/api/entries', entryRoutes);
 
 app.use(middleware.unknownEndpointHandler);
