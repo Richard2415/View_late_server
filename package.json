@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "build:ui": "rm -rf build && cd ../client && rm -rf build && npm run build --prod && cp -r build ../server"
+    "dev": "nodemon index.js"
   },
   "author": "Richard.",
   "license": "ISC",
@@ -23,6 +22,7 @@
     "validator": "^13.7.0"
   },
   "devDependencies": {
-    "eslint": "^7.32.0"
+    "eslint": "^7.32.0",
+    "nodemon": "^2.0.15"
   }
 }
